@@ -1,16 +1,16 @@
 import { Injectable } from "@angular/core";
-import { Course } from "./course";
+import { Package } from "./package";
 
 @Injectable ({
     providedIn: 'root'
 })
-export class CourseService {
-    retrieveAll(): Course[] {
-        return COURSES;
+export class PackageService {
+    retrieveAll(): Package[] {
+        return PACKAGES;
     }
 }
 
-var COURSES: Course[] = [
+var PACKAGES: Package[] = [
     {
         id: 1,
         name: 'Angular: CLI',
@@ -64,6 +64,17 @@ var COURSES: Course[] = [
         code: 'PWY-9381',
         rating: 5,
         price: 56.99,
+        imageUrl: '/assets/images/animations.png',
+    },
+    {
+        id: 6,
+        name: 'Angular: Animations + Router',
+        releaseDate: 'November 25, 2021',
+        description: 'Angular: Animations - Neste curso, os alunos irão obter um conhecimento aprofundado sobre os recursos disponíveis sobre Animation. \nAngular: Router - Neste curso, os alunos irão obter um conhecimento aprofundado sobre os recursos disponíveis no módulo de Router.',
+        duration: 160,
+        code: 'ONHPWY-10476',
+        rating: 5,
+        price: 100.00,
         imageUrl: '/assets/images/animations.png',
     }
 ];
