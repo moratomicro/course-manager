@@ -4,8 +4,8 @@ import { CourseInfoComponent } from "./course-info.component";
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
-import { StarModule } from "src/shared/component/star/star.module";
-import { AppPipeModule } from "src/shared/pipe/app-pipe.module";
+import { StarModule } from "src/app/shared/component/star/star.module";
+import { AppPipeModule } from "src/app/shared/pipe/app-pipe.module";
 
 @NgModule ({
     declarations: [
